@@ -31,8 +31,8 @@ p {
     scale: 0 1;
     animation: analitzador linear;
     -webkit-animation-timeline: scroll();
-       -moz-animation-timeline: scroll();
-            animation-timeline: scroll();
+    -moz-animation-timeline: scroll();
+    animation-timeline: scroll();
     transform-origin: left;
 }
 
@@ -42,7 +42,7 @@ p {
     }
 }
 
-@media (max-width: 480px) {
+/*@media (max-width: 480px) {
     body {
         background-color: red;
     }
@@ -57,15 +57,22 @@ p {
     body {
         background-color: green;
     }
-}
+}*/
 
-/*@media (width <= 720px) {
+@media (width <=480px) {
     body {
         background-color: red;
     }
 }
-@media (width >= 720px) {
+
+@media (481px <=width<=1279px) {
     body {
-        background-color: blue;
+        background-color: orange;
     }
-}*/
+}
+
+@media (width >=1280px) {
+    body {
+        background-color: green;
+    }
+}
