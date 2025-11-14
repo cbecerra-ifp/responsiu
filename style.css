@@ -29,8 +29,10 @@ p {
     z-index: 1000;
     width: 100%;
     scale: 0 1;
-    animation: analitzador 4s linear;
-    animation-timeline: scroll();
+    animation: analitzador linear;
+    -webkit-animation-timeline: scroll();
+       -moz-animation-timeline: scroll();
+            animation-timeline: scroll();
     transform-origin: left;
 }
 
